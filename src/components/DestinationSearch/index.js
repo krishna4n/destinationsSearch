@@ -39,7 +39,7 @@ class Search extends Component {
         </div>
         <ul className="cards-container">
           {searchedList.map(eachUser => (
-            <DestinationsItem destinationsItems={eachUser} />
+            <DestinationsItem destinationsItems={eachUser} key={eachUser.id} />
           ))}
         </ul>
       </div>
